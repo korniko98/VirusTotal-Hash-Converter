@@ -42,7 +42,7 @@ for i in range(sheet.nrows):
     sheet1.write(i + 1, 1, SHA1)
     sheet1.write(i + 1, 2, SHA256)
     print(i + 1, " of ", sheet.nrows, " Completed with response ",response)
-    time.sleep(1)  # VirusTotal Public API allows only 4 requests per minute, Do not change the sleep duration.
+    time.sleep(16)  # VirusTotal Public API allows only 4 requests per minute, Do not change the sleep duration.
 
 
 wbwrite.save('HashConvertedOutput.xls')
